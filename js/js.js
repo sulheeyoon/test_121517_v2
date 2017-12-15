@@ -22,13 +22,13 @@ console.log("mapped");
 
 ///2. Adding the markers
 // now add the marker here, with a popup text explaining the marker
-L.marker([-25.262, -57.581]).addTo(map)
-    .bindPopup('Asuncion, Paraguay')
+L.marker([47.262, 7.581]).addTo(map)
+    .bindPopup('Torino, Italy')
     .addTo(map);
 
 ///3. Adding the layer data to be mapped
 // calling the data to be mapped, that is in this case, stored within the Github repo data folder
-var Paraguay_Department = "https://raw.githubusercontent.com/GeoAdaptive/Resources_library/master/Example_Paraguay/data/ADM_PRY_DEP.geojson?token=AgSQK2E68ldQRZyJTVEkUhY-YQb960hYks5aNCaMwA%3D%3D";
+var Paraguay_Department = "https://raw.githubusercontent.com/sulheeyoon/test_121517_v2/master/data/department.geojson";
 
 //use this function to download and create mappable objects
 $(document).ready(function(){
@@ -36,7 +36,7 @@ $(document).ready(function(){
     var parsedData = JSON.parse(data);
     var LayerMappedPolygon = L.geoJSON(parsedData,
       {
-        style: {opacity:1,width:0.5,color:'#85C1E9'},
+        style: {opacity:1,width:0.5,color:'#83C1E9'},
         pointToLayer: function (feature, latlng) {
         return new L.Polygon(latlng, {
         });
