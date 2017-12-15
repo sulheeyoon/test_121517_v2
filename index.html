@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <!--here is where your web page starts to load-->
+  <body>
+    <!--here add some links to use the default styles-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- This request the usage of the leaflet library, which is a populat web-mapping library for open-source projects
+    Make sure you put this AFTER Leaflet's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+      integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+      crossorigin=""/>
+    <!--Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+        integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+        crossorigin=""></script>
+    <!--And add this jquery documentation for downloading and parsing data-->
+    <script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+
+
+    <!--Below starts the content of the webpage-->
+    <!--The mapping portal here starts from the top edge of your screen, takes the full width 100%, the height 84%-->
+    <div id="map" style="position: absolute; width:100%; height:84%; z-index:20;"></div>
+    <!--We can add the title of your webmap here-->
+    <div>
+      <h2 id = "title"> Change your title here</h2>
+      <p id = "description"> This is a map visualizing the social-economic condition of Paraguay through a series indicators developed by GeoAdaptive's analytics team. </p>
+    </div>
+    <img id = "logo" src="https://preview.ibb.co/i2z8FQ/logo.png">
+
+    <!--usually put the request for javascript files here, it controls the operations of the application-->
+    <script src = "js/js.js">
+    </script>
+  </body>
+  <!--the application ends-->
+</html>

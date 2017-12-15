@@ -1,0 +1,28 @@
+/*This '#' calls the id of the HTML element you wanna control style for*/
+/*full details of CSS properties is here.*/
+#title {
+  position:absolute;
+  left:2%;
+  bottom:10%;
+  font-size:24px;
+  font-family:Roboto;
+  z-index: 40;
+}
+
+#description {
+  position:absolute;
+  width:30%;
+  left:2%;
+  bottom:3%;
+  font-size:14px;
+  font-family:Roboto;
+  z-index: 40;
+}
+
+#logo {
+  position:absolute;
+  width:10%;
+  right:2%;
+  bottom:2%;
+  z-index: 40;
+}
